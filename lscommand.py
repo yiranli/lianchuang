@@ -3,7 +3,6 @@
 # Filename:lscommand.py
 
 
-
 import os,pwd,grp,time,stat,math,sys
 command = raw_input('command:')
 l = raw_input('list:')
