@@ -34,8 +34,8 @@
         $b='';
         $c='';
         $mylink=mysql_connect("localhost","root","liyiran") or die('Could not connect:'.mysql_error());
-        mysql_select_db("my",$mylink);
-        $sql="select * from men_info where (1=1)";
+        mysql_select_db("lianchuang",$mylink);
+        $sql="select * from applicant_info where (1=1)";
         if (isset($_POST['sex'])) {
             $a="and sex like '%$_POST[sex]%'";}
         if (isset($_POST['groups'])) {
