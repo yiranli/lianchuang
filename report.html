@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>联创报名系统</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <h2>报名表</h2>
+
+  <p>请认真填写:</p>
+  <form method="post" action="res.php">
+    <label for="name">姓名:</label>
+    <input type="text" id="name" name="name" /><br />
+    <label for="cardid">学号:</label>
+    <input type="text" id="cardid" name="cardid" /><br />
+    <label for="area">校区:</label>
+    <input type="radio" id="area" name="area" value="韵苑" checked="checked"/>韵苑
+    <input type="radio" id="area" name="area" value="沁苑" />沁苑
+    <input type="radio" id="area" name="area" value="紫菘" />紫菘<br />
+    <label for="rasex">性别:</label>
+    <input id="rasex" name="rasex" type="radio" value="男" checked="checked" /> 男
+    <input id="rasex" name="rasex" type="radio" value="女" /> 女<br />
+    <label for="college">学院(简称):</label>
+    <input type="text" id="college" name="college" /><br />
+    <label for="class">专业班级:</label>
+    <input type="text" id="class" name="class" /><br />
+    <label for="tele">联系电话:</label>
+    <input type="text" id="tele" name="tele" /><br />
+    <label for="email">电子邮箱:</label>
+    <input type="text" id="email" name="email" /><br />
+    <label for="groups">报名组别:</label>
+    <table>
+    <tr>
+    <td><input id="groups" name="groups" type="radio" value="Android组" checked="checked"/> Android组</td>
+    <td><input id="groups" name="groups" type="radio" value="IT组" /> IT组</td>
+    <td><input id="groups" name="groups" type="radio" value="Web组" /> Web组</td>
+    <td><input id="groups" name="groups" type="radio" value="iOS组" /> iOS组</td>
+    </tr>    
+    <tr>
+    <td><input id="groups" name="groups" type="radio" value="Design组" /> Design组</td>
+    <td><input id="groups" name="groups" type="radio" value="PM组" /> PM组</td>
+    <td><input id="groups" name="groups" type="radio" value="算法组" /> 算法组</td>
+    <td><input id="groups" name="groups" type="radio" value="嵌入式组" /> 嵌入式组</td>
+    </tr>
+    </table>
+    <label for="intro">自我介绍:</label><br />
+    <textarea cols="50" id="intro" name="intro" rows="5" placeholder="
+    100字以内"></textarea><br />
+    <input type="submit" value="Submit" name="submit" />
+  </form>
+</body>
+</html>
